@@ -1,0 +1,373 @@
+:root {
+	--grey-border: 1px solid #4b5769;
+	--white-border: 1px solid #fff;
+	--light-white: #ddd;
+	--text-shadow-light: 0 0 5px rgba(255, 255, 255, 0.65);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	min-width: 1600px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #181d23;
+	overflow: scroll;
+}
+
+.panel {
+	width: 1600px;
+	height: 920px;
+	border: var(--grey-border);
+	overflow: hidden;
+	border-radius: 15px;
+}
+
+.panel-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #4b5769;
+}
+.panel-right {
+	background-image: linear-gradient(
+		180deg,
+		rgba(55, 64, 76, 1) 0%,
+		rgba(21, 26, 32, 1) 100%
+	);
+}
+
+.info-top h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.active {
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* ------------ */
+.date-box {
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.date-box .day {
+	font-size: 2rem;
+}
+.date-box .time {
+	font-size: 4rem;
+}
+.date-box .date {
+	font-size: 1.8rem;
+}
+
+/* ------------ */
+
+.menu {
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.menu i {
+	font-size: 6rem;
+	margin-bottom: 0.4rem;
+}
+.menu p {
+	font-size: 1.7rem;
+}
+.menu a {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-decoration: none;
+	color: white;
+	border: 1px solid var(--light-white);
+	border-radius: 15px;
+}
+.menu-item {
+	border-radius: 15px;
+	padding: 40px 10px;
+	transition: background-image 0.3s;
+}
+
+.menu a:hover {
+	background-color: transparent;
+	background-image: linear-gradient(
+		160deg,
+		rgba(0, 110, 255, 0.25) 0%,
+		rgba(9, 255, 0, 0.25) 100%
+	);
+}
+
+.info-box h3 {
+	font-size: 2rem;
+}
+.info-box p {
+	font-size: 1.6rem;
+}
+
+/* Staticstics*/
+
+.main-table .btn-outline-light {
+	transition: background-color 0.3s;
+}
+.main-table .btn-outline-light:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+	color: var(--light-white);
+}
+
+/* .main-table .btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+	background-color: transparent;
+	color: #ddd;
+}
+
+.main-table .dropdown-menu {
+	background-color: black;
+	color: #ddd;
+}
+.main-table .dropdown-item {
+	background-color: rgb(61, 59, 59);
+	color: #ddd;
+} */
+.stats-item {
+	border: 1px solid var(--light-white);
+	border-radius: 15px;
+	transition: background-color 0.3;
+}
+.stats-item p:nth-of-type(1) {
+	font-size: 1.2rem;
+}
+
+.stats-item:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+}
+
+.stats-item h3 {
+	margin-bottom: 1em;
+	font-size: 1.8rem;
+}
+
+/* ------------ */
+.main-table h3 {
+	font-size: 2.3rem;
+}
+.main-table .btn {
+	font-size: 1.3rem;
+}
+
+.main-table .table-group-divider {
+	border-top-color: #fff;
+}
+.main-table .table thead {
+	font-weight: bold;
+	font-size: 1.3rem;
+	background-color: transparent;
+	color: var(--light-white);
+}
+.main-table .table th {
+	background-color: transparent;
+	color: var(--light-white);
+}
+
+.main-table .table tbody td {
+	color: var(--light-white);
+	border-bottom: 1px solid var(--light-white);
+	background-color: transparent;
+}
+
+.page-link {
+	background-color: transparent;
+	color: var(--light-white);
+	transition: background-color 0.3s;
+	font-size: 1.4rem;
+}
+
+.page-link:hover {
+	background-color: rgba(255, 255, 255, 0.08);
+	color: var(--light-white);
+}
+
+/* Logo */
+
+.logo h3 {
+	font-size: 3rem;
+}
+
+.logo p {
+	font-size: 1.6rem;
+}
+
+.users-online p {
+	font-size: 3.5rem;
+}
+.users-online .user-sex-number p {
+	font-size: 3rem;
+}
+.logo i {
+	text-shadow: var(--text-shadow-light);
+}
+.users-gender .box i:nth-child(1) {
+	font-size: 4rem;
+	text-shadow: 0px 0px 8px rgba(9, 255, 0, 0.8);
+}
+.users-gender .box:nth-child(2) i {
+	font-size: 4rem;
+	text-shadow: 0px 0px 8px rgba(0, 217, 255, 0.8);
+}
+.users-gender .box {
+	font-size: 2.5rem;
+}
+
+/* ------------ */
+
+.monthly-statss .dropdown .dropdown-menu {
+	background-color: transparent;
+}
+
+.monthly-stats .form-select {
+	font-size: 1.3rem;
+}
+
+/* #495057 */
+.monthly-stats option {
+	background-color: #495057;
+}
+
+.monthly-stats h4 {
+	font-size: 1.6rem;
+}
+
+.monthly-stats p {
+	font-size: 1.4rem;
+}
+
+/* Posts  */
+
+.posts h3 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.featured-post .btn {
+	font-size: 1.6rem;
+}
+.featured-post .card-title {
+	font-size: 1.8rem;
+}
+.featured-post .card-body {
+	font-size: 1.4rem;
+}
+.active-users .card-img {
+	overflow: hidden;
+}
+.active-users img {
+	height: 180px;
+
+	object-fit: cover;
+	opacity: 0.6;
+	transition: opacity 0.3s, transform 0.3s;
+}
+.active-users img:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+.active-users .card-body,
+.active-users .btn {
+	font-size: 1.5rem;
+}
+
+.search p {
+	font-size: 1.5rem;
+}
+.search .btn {
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: transparent;
+	box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.65);
+	transition: background-color 0.3s, color 0.3s;
+}
+.search .btn:hover {
+	background-color: #fff;
+	color: black;
+}
+.search input.form-control {
+	font-size: 1.7rem;
+}
+
+/* ------- */
+.post-modal h3 {
+	font-size: 1.7rem;
+	font-weight: bold;
+}
+
+.post-modal p,
+.post-modal .btn {
+	font-size: 1.3rem;
+}
+
+/* Users */
+
+.users-info .list-group li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: transparent;
+	margin: 0.2em 0;
+	padding: 0.5em 1em;
+	font-size: 1.5rem;
+	color: #fff;
+}
+.users-info .list-group .btn {
+	font-size: 1.6rem;
+}
+/* ----------- */
+
+.users-search .search-logo {
+	font-size: 2.5rem;
+	text-transform: capitalize;
+	text-shadow: var(--text-shadow-light);
+}
+
+.users-input input,
+.users-input label,
+.users-input select {
+	font-size: 1.6rem;
+}
+.users-input .btn {
+	font-size: 1.6rem;
+}
+.users-modal h3 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+.users-modal input,
+.users-modal label,
+.users-modal select,
+.users-modal .newsletter {
+	font-size: 1.4rem;
+}
+.users-modal p,
+.users-modal .btn {
+	font-size: 1.4rem;
+}

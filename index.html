@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Diamond CMS</title>
+		<script
+			src="https://kit.fontawesome.com/1b3225add6.js"
+			crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="panel">
+			<div class="row m-0 h-100 d-flex justify-content-center">
+				<div class="panel-left col-2 p-0 px-4 text-white text-center">
+					<section class="date-box row text-center">
+						<p class="m-0 day">Środa</p>
+						<p class="m-0 time fw-bold">12:00</p>
+						<p class="m-0 date text-muted">20/03/2023</p>
+					</section>
+					<section class="menu text-uppercase">
+						<a href="index.html" class="active">
+							<div class="menu-item">
+								<i class="fas fa-sliders-h m-4"></i>
+								<p>Strona główna</p>
+							</div></a
+						>
+						<a href="posts.html">
+							<div class="menu-item">
+								<i class="far fa-comments"></i>
+								<p>posty</p>
+							</div></a
+						>
+						<a href="users.html">
+							<div class="menu-item">
+								<i class="fas fa-user-friends"></i>
+								<p>Użytkownicy</p>
+							</div></a
+						>
+					</section>
+					<section class="info-box mt-3">
+						<h3>Diamond CMS</h3>
+						<p class="text-muted">&copy;Copyright 2023</p>
+					</section>
+				</div>
+
+				<div class="panel-right col-10 p-0">
+					<div class="row m-0 h-100">
+						<div class="col-9">
+							<section class="stats text-center text-light">
+								<p class="py-5 display-4 text-uppercase fw-bold">
+									Główne statystyki
+								</p>
+
+								<div
+									class="row d-flex justify-content-center align-items-center mb-5 ps-2">
+									<div class="col-4">
+										<div class="stats-post stats-item py-4 px-5">
+											<h3 class="text-uppercase fw-bold">postów</h3>
+											<p>Łącznie 4,233,131</p>
+											<p>W tym miesiącu 124,232</p>
+										</div>
+									</div>
+
+									<div class="col-4">
+										<div class="stats-threads stats-item px-5 py-4">
+											<h3 class="text-uppercase fw-bold">tematów</h3>
+											<p>Łącznie 1,234,661</p>
+											<p>W tym miesiącu 32,645</p>
+										</div>
+									</div>
+
+									<div class="col-4">
+										<div class="stats-users stats-item p-4">
+											<h3 class="text-uppercase fw-bold">użytkowników</h3>
+											<p>Łącznie 750,342</p>
+											<p>W tym miesiącu 8,332</p>
+										</div>
+									</div>
+								</div>
+								<div class="py-5 text-dark" id="chart"></div>
+							</section>
+							<section class="main-table p-5">
+								<div class="d-flex justify-content-between">
+									<h3 class="text-white mb-3 fw-bold">Ostatnie posty:</h3>
+									<div class="dropdown ms-auto">
+										<a
+											class="btn btn-outline-light dropdown-toggle px-3 py-2"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false">
+											Sortuj
+										</a>
+
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="#">Według tematu</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Według autora</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Według dat</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<table class="table text-light">
+									<thead>
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Temat</th>
+											<th scope="col">Użytkownik</th>
+											<th scope="col">Data</th>
+										</tr>
+									</thead>
+									<tbody class="table-group-divider">
+										<tr>
+											<th>1</th>
+											<td>Lorem, ipsum dolor.</td>
+											<td>Otto</td>
+											<td>20/20/2020</td>
+										</tr>
+										<tr>
+											<th>2</th>
+											<td>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+											</td>
+											<td>Thornton</td>
+											<td>20/20/2020</td>
+										</tr>
+										<tr>
+											<th>3</th>
+											<td>Lorem ipsum dolor sit amet.</td>
+											<td>Larry the Bird</td>
+											<td>20/20/2020</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<nav
+									aria-label="Page navigation example"
+									class="d-flex justify-content-center out">
+									<ul class="pagination">
+										<li class="page-item">
+											<a class="page-link" href="#" aria-label="Previous">
+												<span aria-hidden="true">&laquo;</span>
+											</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link px-3" href="#">1</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link px-3" href="#">2</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link px-3" href="#">3</a>
+										</li>
+										<li class="page-item">
+											<a class="page-link px-3" href="#" aria-label="Next">
+												<span aria-hidden="true">&raquo;</span>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</section>
+						</div>
+						<aside class="col-3 p-4 text-light text-center">
+							<section
+								class="logo py-5 d-flex flex-column justify-content-center">
+								<h3><i class="fa-regular fa-gem mx-2"></i>Diamond</h3>
+								<p>Powerful tool for professionals & cookie lovers</p>
+							</section>
+							<section class="users-online py-3">
+								<h3 class="text-uppercase fw-bold py-3">Użytkownicy online</h3>
+								<p>47</p>
+							</section>
+							<section class="users-gender mb-3">
+								<h3 class="text-uppercase pt-4 fw-bold py-3">
+									płeć użytkowników
+								</h3>
+								<div class="row m-0">
+									<div
+										class="col-6 box d-flex flex-column justify-content-center">
+										<i class="fas fa-male py-2"></i>
+										<p>56%</p>
+									</div>
+									<div
+										class="col-6 box d-flex flex-column justify-content-center">
+										<i class="fas fa-female py-2"></i>
+										<p>44%</p>
+									</div>
+								</div>
+							</section>
+							<section class="monthly-stats py-5">
+								<h3 class="fw-bold text-uppercase">Statystyki</h3>
+								<select
+									class="form-select text-light bg-transparent mb-5 mt-3"
+									aria-label="Default select example">
+									<option selected value="1">Styczeń</option>
+									<option value="2">Luty</option>
+									<option value="3">Marzec</option>
+									<option value="4">Kwiecień</option>
+									<option value="5">Maj</option>
+									<option value="6">Czerwiec</option>
+									<option value="7">Lipiec</option>
+									<option value="8">Sierpień</option>
+									<option value="9">Wrzesień</option>
+									<option value="10">Październik</option>
+									<option value="11">Listopad</option>
+									<option value="12">Grudzień</option>
+								</select>
+
+								<div class="row p-3 m-0">
+									<div class="col-6">
+										<h4>Posty</h4>
+										<p class="text-secondary">123,435</p>
+									</div>
+									<div class="col-6">
+										<h4>Rejestracje</h4>
+										<p class="text-secondary">15,409</p>
+									</div>
+								</div>
+								<div class="row p-3 m-0">
+									<div class="col-6">
+										<h4>Średni czas - pobyt</h4>
+										<p class="text-secondary">46min</p>
+									</div>
+									<div class="col-6">
+										<h4>Średni czas - aktywność</h4>
+										<p class="text-secondary">24min</p>
+									</div>
+								</div>
+								<div class="row p-3 m-0">
+									<div class="col-6">
+										<h4>Ilośc zamówien</h4>
+										<p class="text-secondary">928</p>
+									</div>
+									<div class="col-6">
+										<h4>Ilośc reklamacji</h4>
+										<p class="text-secondary">6</p>
+									</div>
+								</div>
+							</section>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<script>
+			var options = {
+				series: [
+					{
+						name: 'Aktywni użytkownicy',
+						data: [31, 40, 28, 51, 42, 109, 100],
+					},
+					{
+						name: 'Ilość postów',
+						data: [11, 32, 45, 32, 34, 52, 41],
+					},
+				],
+				chart: {
+					height: 350,
+					type: 'area',
+					foreColor: '#fff',
+				},
+				dataLabels: {
+					enabled: false,
+				},
+				stroke: {
+					curve: 'smooth',
+				},
+				xaxis: {
+					type: 'datetime',
+					categories: [
+						'2018-09-19T00:00:00.000Z',
+						'2018-09-19T01:30:00.000Z',
+						'2018-09-19T02:30:00.000Z',
+						'2018-09-19T03:30:00.000Z',
+						'2018-09-19T04:30:00.000Z',
+						'2018-09-19T05:30:00.000Z',
+						'2018-09-19T06:30:00.000Z',
+					],
+				},
+				tooltip: {
+					x: {
+						format: 'dd/MM/yy HH:mm',
+					},
+				},
+				legend: {
+					show: false,
+				},
+			};
+
+			var chart = new ApexCharts(document.querySelector('#chart'), options);
+			chart.render();
+		</script>
+	</body>
+</html>
